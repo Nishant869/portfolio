@@ -1,0 +1,23 @@
+.mat-stepper-vertical{
+    background-color: white;
+}
+
+::ng-deep .mat-step-header .mat-step-label.mat-step-label-active {
+    color: blue
+}
+
+::ng-deep .mat-stepper-vertical-line::before {
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-color: red;
+}
+
+::ng-deep .mat-step-header .mat-step-icon {
+    background-color: red;
+}
+
+.underscore{
+    border-bottom: 2px solid;
+    border-color: var(--border_color);
+    display: inline-block;
+  }

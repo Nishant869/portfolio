@@ -1,0 +1,24 @@
+<section class="companies-section">
+    <div class="content-container">
+        <h2 class="underscore">
+            Experiences</h2>
+        <mat-stepper orientation="vertical" linear="false" #stepper>
+            <mat-step *ngFor="let x of experiences" editable="true" completed="false" StepState="number">
+                <ng-template matStepLabel>{{x.company.name}}, {{x.company.location}}<br />
+                    <sup>{{x.doj}} - {{x.endDate}}</sup>
+                </ng-template>
+                <p><b>Role : </b>{{x.work.role}}</p>
+                <p><b>Roles and Responsibilities:</b></p>
+                <ul>
+                    <li *ngFor="let resp of x.work.responsiblities">{{resp}}</li>
+                </ul>
+
+                <p><b>Acknowledgements/Awards:</b></p>
+                <ul>
+                    <li *ngFor="let award of x.recognition">{{award}}</li>
+                </ul>
+
+            </mat-step>
+        </mat-stepper>
+    </div>
+</section>
