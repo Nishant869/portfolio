@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component } from "@angular/core";
+import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: 'nishant-about',
+  selector: "nishant-about",
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css'],
+  templateUrl: "./about.component.html",
+  styleUrls: ["./about.component.scss"],
 })
 export class AboutComponent {}
