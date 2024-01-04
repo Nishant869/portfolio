@@ -1,16 +1,40 @@
-import { Component } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { MatCardModule } from "@angular/material/card";
-import { IProject } from "@app/shared/interfaces/project.interface";
-import { Skills } from "@app/shared/enums/skills.enum";
-import { MatChipsModule } from "@angular/material/chips";
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
+import { IProject } from '@app/shared/interfaces/project.interface';
+import { Skills } from '@app/shared/enums/skills.enum';
+import { MatChipsModule } from '@angular/material/chips';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  keyframes,
+} from '@angular/animations';
 
 @Component({
-  selector: "nishant-project",
+  selector: 'nishant-project',
   standalone: true,
   imports: [CommonModule, MatCardModule, MatChipsModule],
-  templateUrl: "./project.component.html",
-  styleUrls: ["./project.component.scss"],
+  templateUrl: './project.component.html',
+  styleUrls: ['./project.component.scss'],
+  animations: [
+    trigger('flyinout', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate(
+          '1000ms',
+          keyframes([
+            style({ opacity: 0.2, offset: 0 }),
+            style({ opacity: 0.5, offset: 0.8 }),
+            style({ opacity: 1, offset: 1.0 }),
+          ]),
+        ),
+      ]),
+      transition(':leave', [animate('1000ms', style({ opacity: 0 }))]),
+    ]),
+  ],
 })
 export class ProjectComponent {
   readonly projects: IProject[] = [

@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@include mat.core();
+
+@import 'abstracts/variables';
+
+
+$primary-pallete: mat.define-palette(mat.$red-palette);
+$accent-pallete: mat.define-palette(mat.$red-palette);
+$warn-pallete: mat.define-palette(mat.$red-palette);
+
+$app-theme: mat.define-light-theme($primary-pallete,
+    $accent-pallete,
+    $warn-pallete);
+@include mat.all-component-themes($app-theme);
 
 html, body { }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -20,3 +34,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .margin-top-30{
     margin-top: 30px;
 }
+
+
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }

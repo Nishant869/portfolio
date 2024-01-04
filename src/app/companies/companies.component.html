@@ -1,8 +1,8 @@
 <section class="companies-section">
     <div class="content-container">
-        <h2 class="underscore">
+        <h2 class=" underscore">
             Experiences</h2>
-        <mat-stepper orientation="vertical" linear="false" #stepper>
+        <mat-stepper orientation="vertical" linear="false" #stepper color="primary">
             <mat-step *ngFor="let x of experiences" editable="true" completed="false" StepState="number">
                 <ng-template matStepLabel>{{x.company.name}}, {{x.company.location}}<br />
                     <sup>{{x.doj}} - {{x.endDate}}</sup>

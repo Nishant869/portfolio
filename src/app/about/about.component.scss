@@ -64,4 +64,9 @@
     color: var(--border_color);
     font-weight: 500;
     cursor: pointer;
+    overflow: hidden;
+
+    mat-icon{
+        vertical-align: middle;
+    }
 }
