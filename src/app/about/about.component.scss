@@ -1,6 +1,8 @@
 .about-section{
     background-color: white;
     margin-top:200px;
+    background:  url('../../assets/images/bgimg.jpeg') left top / cover no-repeat, rgba(255, 255, 255, 0.7);
+    background-blend-mode:overlay ;
   }
 
 .about-container{
@@ -68,5 +70,25 @@
 
     mat-icon{
         vertical-align: middle;
+    }
+}
+
+.about_resume_download:hover{
+
+    #download_icon_arrow{
+        animation-name: arrowAnimation;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        font-weight: 600;
+    }
+}
+
+@keyframes arrowAnimation {
+    from {
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(4px);
     }
 }

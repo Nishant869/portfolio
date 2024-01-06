@@ -27,7 +27,6 @@ import {
           '1000ms',
           keyframes([
             style({ opacity: 0.2, offset: 0 }),
-            style({ opacity: 0.5, offset: 0.8 }),
             style({ opacity: 1, offset: 1.0 }),
           ]),
         ),
