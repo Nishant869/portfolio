@@ -24,6 +24,7 @@ export class CompaniesComponent implements OnInit {
         endDate: 'Till Date',
         recognition: [
           'Received a shout out for being a quick learner and getting involved in major initiatives.',
+          'Received the Best Debut Performer award',
         ],
 
         work: {
