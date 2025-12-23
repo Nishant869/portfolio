@@ -38,6 +38,12 @@ import {
 export class ProjectComponent {
   readonly projects: IProject[] = [
     {
+      projectHeading: `QAI (Quality Analysis using AI)`,
+      teamSize: 6,
+      description: `AI to build an automated test-case generation solution. By combining design inputs with contextual understanding via MCP, QAI produces runnable test cases that can be executed across a wide range of testing frameworks. The objective is to empower both developers and QA teams by accelerating quality validation and providing meaningful initial test coverage.`,
+      skillsUsed: [Skills.REACT, Skills.AI, Skills.NODE],
+    },
+    {
       projectHeading: `VISITOR'S APPLICATION`,
       teamSize: 3,
       description: `Visitor portal is a digital log book to track visitors to office area. It capture all the information about the visitor both planned and adhoc. It was integrated along with the office space booking so that if there is a planned visit meeting areas can be allocated without any conflict`,
