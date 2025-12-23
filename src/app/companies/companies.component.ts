@@ -17,11 +17,34 @@ export class CompaniesComponent implements OnInit {
     this.experiences = [
       {
         company: {
-          name: 'FordPro- Electriphy',
+          name: 'Ford Motor Company',
+          location: 'Bangalore',
+        },
+        doj: 'January 2025',
+        endDate: 'Present',
+        recognition: [
+          '3rd  Position in Ford AI hacakthon 2025',
+          'Recevied multiple shoutouts for initative and team leadership',
+        ],
+        work: {
+          role: 'Software Engineer Lead',
+          responsiblities: [
+            "Lead	full-stack	engineering	team	to	architect	and	deliver	enterprise-scale	solutions.",
+            "Collaborate	with	product,	UX,	QA,	and	developers.",
+            "Own	end-to-end	delivery	including	design,	development,	sprint	planning,	and	deployment.",
+            "Review	code,	enforce	engineering	best	practices,	and	mentor	developers.",
+            "Drive	architectural	decisions	improving	scalability	and	system	performance.",
+            "Manage	production	issues	and	ensure	system	reliability	and	observability.",
+          ]
+        }
+      },
+      {
+        company: {
+          name: 'FordPro- Electriphi',
           location: 'Bangalore',
         },
         doj: 'January 2023',
-        endDate: 'Till Date',
+        endDate: 'January 2025',
         recognition: [
           'Received a shout out for being a quick learner and getting involved in major initiatives.',
           'Received the Best Debut Performer award',
